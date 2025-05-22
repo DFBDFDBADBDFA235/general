@@ -1,7 +1,8 @@
 #google cloud non costa se lancio questo script che funziona ma vediDeprecationWarning Apre un Google Sheet, Crea un nuovo foglio, Scrive qualche riga così genera meno richieste API totali quindi puoi farlo 5000 volte al giorno senza pagare nulla.
 #DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)
-Credential path: C:\repos\general\hip-watch-460612-c4-e0dd0a659b54.json
-Dati scritti nel foglio 'Metalli interessanti' del Google Sheet con ID 1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag.
+#Credential path: C:\repos\general\hip-watch-460612-c4-e0dd0a659b54.json
+#Dati scritti nel foglio 'Metalli interessanti' del Google Sheet con ID 1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag.
+#CONFIGURARE soglie in google cloud SE SI USA servizio
 
 import gspread
 import os
