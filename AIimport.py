@@ -1,12 +1,13 @@
 #google cloud non costa se lancio questo script che Apre un Google Sheet, Crea un nuovo foglio, Scrive qualche riga così genera meno richieste API totali quindi puoi farlo 5000 volte al giorno senza pagare nulla.
 
 import gspread
+import os
 from google.oauth2.service_account import Credentials
 
 # === CONFIGURA QUI ===
 SHEET_ID = "1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag"  # L'ID è nella URL tra /d/ e /edit
 NEW_SHEET_NAME = "Metalli interessanti"
-CREDENTIALS_PATH = r"C:\repos\general\hip-watch-460612-c4-e0dd0a659b54.json" 
+CREDENTIALS_PATH = os.path.join(os.path.dirname(__file__), "hip-watch-460612-c4-e0dd0a659b54.json")
 
 # === AUTENTICAZIONE ===
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
