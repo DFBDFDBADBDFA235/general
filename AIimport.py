@@ -1,4 +1,7 @@
-#google cloud non costa se lancio questo script che Apre un Google Sheet, Crea un nuovo foglio, Scrive qualche riga così genera meno richieste API totali quindi puoi farlo 5000 volte al giorno senza pagare nulla.
+#google cloud non costa se lancio questo script che funziona ma vediDeprecationWarning Apre un Google Sheet, Crea un nuovo foglio, Scrive qualche riga così genera meno richieste API totali quindi puoi farlo 5000 volte al giorno senza pagare nulla.
+#DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)
+Credential path: C:\repos\general\hip-watch-460612-c4-e0dd0a659b54.json
+Dati scritti nel foglio 'Metalli interessanti' del Google Sheet con ID 1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag.
 
 import gspread
 import os
@@ -50,6 +53,6 @@ data = [
 
 # === SCRIVE LA TABELLA ===
 worksheet.clear()
-worksheet.update("A1", data)
+worksheet.update("A1", data)#correggere secondo #DeprecationWarning: The order of arguments in worksheet.update() has changed. Please pass values first and range_name secondor used named arguments (range_name=, values=)
 
 print(f"Dati scritti nel foglio '{NEW_SHEET_NAME}' del Google Sheet con ID {SHEET_ID}.")
