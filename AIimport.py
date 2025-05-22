@@ -6,7 +6,7 @@ from google.oauth2.service_account import Credentials
 # === CONFIGURA QUI ===
 SHEET_ID = "1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag"  # L'ID è nella URL tra /d/ e /edit
 NEW_SHEET_NAME = "Metalli interessanti"
-CREDENTIALS_PATH = "hip-watch-460612-c4-e0dd0a659b54.json" #con path locale = stessa folder dello script 
+CREDENTIALS_PATH = "C:\repos\general\hip-watch-460612-c4-e0dd0a659b54.json" #con path locale = stessa folder dello script 
 
 # === AUTENTICAZIONE ===
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
