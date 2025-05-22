@@ -9,6 +9,9 @@ SHEET_ID = "1SpBWUH5bbF4WGbx2WV_ChrXr7ls3RQZnOoToJy-GWag"  # L'ID è nella URL t
 NEW_SHEET_NAME = "Metalli interessanti"
 CREDENTIALS_PATH = os.path.join(os.path.dirname(__file__), "hip-watch-460612-c4-e0dd0a659b54.json")
 
+print("Credential path:", CREDENTIALS_PATH)
+
+
 # === AUTENTICAZIONE ===
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 credentials = Credentials.from_service_account_file(CREDENTIALS_PATH, scopes=scope)
